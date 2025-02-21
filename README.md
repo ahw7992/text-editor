@@ -10,4 +10,5 @@ Welcome to my replication of antirez's kilo! This is for my first project in my 
 - cd into the new directory, ./text-editor
 - run 'make'
 - run ./kilo
+  
 Congratulations, the Kilo text editor is now open!
