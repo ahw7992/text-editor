@@ -10,7 +10,7 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <string.h>
-#include <linux/ioctl.h>
+#include <sys/ioctl.h>
 #include <sys/types.h>
 #include <termios.h>
 #include <time.h>
@@ -194,6 +194,7 @@ int editorReadKey() {
   } else {
     return c;
   }
+}
 }
 
 int getCursorPosition(int *rows, int *cols) {
@@ -545,6 +546,7 @@ void editorDelChar() {
     editorRowAppendString(&E.row[E.cy - 1], row->chars, row->size);
     editorDelRow(E.cy);
     E.cy--;
+}
 }
 
 /*** file i/o ***/
